@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://djjeh6nkajdwd"]
+
+[ext_resource type="Script" uid="uid://py1ix3o273v3" path="res://health_bar.gd" id="1_ypcvb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx2kh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ypcvb"]
+bg_color = Color(0.20257735, 0.52237004, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1010145730]
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=207033413]
+offset_right = 718.0
+offset_bottom = 27.0
+theme_override_styles/background = SubResource("StyleBoxFlat_xx2kh")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ypcvb")
+rounded = true
+script = ExtResource("1_ypcvb")
