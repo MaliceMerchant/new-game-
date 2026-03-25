@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c643s5glonng8"]
 
-[ext_resource type="Script" uid="uid://dvthatjo15r6f" path="res://Physics.gd" id="1_2hs0m"]
+[ext_resource type="Script" uid="uid://dv5e7it82bx2c" path="res://player.gd" id="1_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://bc5mmw0k6anxg" path="res://craftpix-net-123681-free-samurai-pixel-art-sprite-sheets/Samurai/Idle.png" id="2_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://fnv25uc85box" path="res://craftpix-net-123681-free-samurai-pixel-art-sprite-sheets/Samurai/Jump.png" id="3_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://bgfs3jgcs8n5i" path="res://craftpix-net-123681-free-samurai-pixel-art-sprite-sheets/Samurai/Run.png" id="4_dw050"]
@@ -411,7 +411,7 @@ size = Vector2(81, 191)
 [node name="Player" type="CharacterBody2D" unique_id=455356029 groups=["player"]]
 script = ExtResource("1_2hs0m")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=109916280 groups=["player"]]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=109916280]
 unique_name_in_owner = true
 texture_filter = 1
 position = Vector2(98, -168)
@@ -419,7 +419,7 @@ scale = Vector2(2.4296877, 2.7656248)
 sprite_frames = SubResource("SpriteFrames_pgbbb")
 animation = &"Parry"
 
-[node name="CollisionShape2d" type="CollisionShape2D" parent="." unique_id=241308254 groups=["player"]]
+[node name="CollisionShape2d" type="CollisionShape2D" parent="." unique_id=241308254]
 position = Vector2(-5, -85)
 shape = SubResource("RectangleShape2D_331ug")
 

@@ -24,10 +24,6 @@ version_control/autoload_on_startup=true
 
 enabled=PackedStringArray("res://addons/godot_ai/plugin.cfg")
 
-[global_group]
-
-player=""
-
 [input]
 
 jump={

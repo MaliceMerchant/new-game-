@@ -87,6 +87,7 @@ func take_damage(damage_amt:float,invincible_time:float = 0.0,ignore_invincible:
 		
 		
 	health -= damage_amt
+	emit_signal("health_changed", health)
 	if invincible_time > 0.0:
 		can_take_damage = false
 		var invincible_tween = create_tween().set_trans(Tween.TRANS_SINE)

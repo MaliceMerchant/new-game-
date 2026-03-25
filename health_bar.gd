@@ -5,6 +5,8 @@ func _ready():
 	await get_tree().process_frame
 	
 	var player = get_tree().get_first_node_in_group("player")
+	print ("found node",player)
+	print("Script",player.get_script())
 	
 	if player:
 		player.health_changed.connect(Callable(self, "update_health"))

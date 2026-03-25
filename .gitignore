@@ -1,3 +1,5 @@
-# Godot 4+ specific ignores
 .godot/
-/android/
+*.import
+craftpix-net-123681-free-samurai-pixel-art-sprite-sheets/
+Fire Wizard/
+GodotAI-109d2262e1316071740f871d3f4b.../
