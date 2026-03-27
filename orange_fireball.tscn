@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://qq3dhcy6lxm7"]
 
-[ext_resource type="Texture2D" uid="uid://cedxnxg2u8o1l" path="res://GodotAI-109d2262e1316071740f871d3f4bb188031d2f5e/addons/godot_ai/Orange fireball.jpg" id="1_8tv2s"]
 [ext_resource type="Script" uid="uid://ictrh5n7i2a6" path="res://orange_fireball.gd" id="1_m7uye"]
+[ext_resource type="Texture2D" uid="uid://bafmt7q07p81p" path="res://GodotAI-109d2262e1316071740f871d3f4bb188031d2f5e/addons/Orange fireball.jpg" id="2_m7uye"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m7uye"]
 radius = 26.010946
@@ -15,10 +15,10 @@ unique_name_in_owner = true
 position = Vector2(-3, 6)
 collision_layer = 2
 
-[node name="Orange" type="Sprite2D" parent="HitBox" unique_id=413621200]
-position = Vector2(14.999996, -8.000004)
-scale = Vector2(0.027256971, 0.18157977)
-texture = ExtResource("1_8tv2s")
+[node name="OrangeFireball" type="Sprite2D" parent="HitBox" unique_id=1655731009]
+position = Vector2(9, -7.0000005)
+scale = Vector2(0.021873184, 0.18098086)
+texture = ExtResource("2_m7uye")
 
 [node name="Collisionshape" type="CollisionShape2D" parent="HitBox" unique_id=1844773058]
 position = Vector2(7.000001, -6)
