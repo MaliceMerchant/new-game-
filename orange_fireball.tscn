@@ -13,7 +13,6 @@ script = ExtResource("1_m7uye")
 [node name="HitBox" type="Area2D" parent="." unique_id=932609844]
 unique_name_in_owner = true
 position = Vector2(-3, 6)
-disable_mode = 1
 collision_layer = 2
 
 [node name="Orange" type="Sprite2D" parent="HitBox" unique_id=413621200]

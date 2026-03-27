@@ -16,7 +16,7 @@ var can_take_damage : bool = true
 
 var health = 100.0
 
- 
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -40,11 +40,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			AnimatedSprite.play("walk")
-		
-		
-				
-				
-		
+
 
 	move_and_slide()
 	
@@ -108,14 +104,19 @@ func start_parry():
 		return
 	
 	is_parrying = true
-	%ParryBox.monitoring = true
+	print ("parry")
+	
+	for area in %ParryBox.get_overlapping_areas():
+		print("PARRY HIT:", area)
+		area.get_parent().queue_free()
+		heal(10) 
 	
 	parry_flash()  # your color effect
 	
 	await get_tree().create_timer(2.0).timeout
 	
-	%ParryBox.monitoring = false
 	is_parrying = false
+	print("endparry")
 	
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("parry"):
@@ -125,10 +126,3 @@ func heal(amount):
 	health += amount
 	health = clamp(health,0,100)
 	emit_signal("health_changed", health)
-
-
-
-func _on_parry_box_area_entered(_area: Area2D) -> void:
-	if is_parrying:
-		print("Parry Success")
-		heal(10)

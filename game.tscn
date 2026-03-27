@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://b2hjkkgiofubp" path="res://platform.tscn" id="1_feb5d"]
 [ext_resource type="PackedScene" uid="uid://djjeh6nkajdwd" path="res://HealthBar.tscn" id="3_7jktm"]
 [ext_resource type="PackedScene" uid="uid://c643s5glonng8" path="res://player.tscn" id="3_fc0e3"]
-[ext_resource type="Script" uid="uid://py1ix3o273v3" path="res://health_bar.gd" id="5_eow3j"]
 [ext_resource type="PackedScene" uid="uid://dx7opnpp02m2e" path="res://ass_hat.tscn" id="7_eow3j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_feb5d"]
@@ -16,21 +15,13 @@ script = ExtResource("1_7jktm")
 
 [node name="Player" parent="." unique_id=455356029 instance=ExtResource("3_fc0e3")]
 unique_name_in_owner = true
-position = Vector2(189, 551)
+position = Vector2(166, 401)
 
 [node name="Node2D" parent="." unique_id=1450859661 instance=ExtResource("1_feb5d")]
 top_level = true
 position = Vector2(539, 611)
 
 [node name="CanvasLayer2" parent="." unique_id=1010145730 instance=ExtResource("3_7jktm")]
-
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer2" unique_id=897081380]
-offset_left = 32.0
-offset_top = 101.0
-offset_right = 603.0
-offset_bottom = 128.0
-value = 100.0
-script = ExtResource("5_eow3j")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1610822979]
 layer = -5

@@ -8,3 +8,4 @@ func _on_hit_box_body_entered(body):
 
 func _process(delta):
 	position += speed * delta * direction
+	
